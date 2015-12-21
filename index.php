@@ -11,6 +11,9 @@
 	<script type="text/javascript" src="app/libraries/angular.min.js"></script>
 	<script type="text/javascript" src="app/libraries/angular-ui-router.min.js"></script>
 	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/controllers/home.controller.js"></script>
+	<script type="text/javascript" src="app/controllers/login.controller.js"></script>
+	<script type="text/javascript" src="app/controllers/upload.controller.js"></script>
 </head>
 <style>
 	.demo-card-wide.mdl-card {
@@ -25,7 +28,7 @@
 		color: #fff;
 	}
 </style>
-<body ng-controller="TestController">
+<body>
 	<!-- Inicia la Cabecera -->
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 		<header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
@@ -47,68 +50,12 @@
 					<div class="mdl-card__supporting-text">
 						Tus calificaciones son el reflejo de tu esfuerzo, estudia y sé más.
 					</div>
+					
 					<div class="mdl-card__actions mdl-card--border">
 						<div style="text-align: center;">
-							<form action="#">
-								<div class="mdl-textfield mdl-js-textfield">
-									<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
-									<label class="mdl-textfield__label" for="sample2">Ingresa tu Código Universitario</label>
-									<span class="mdl-textfield__error">Debes ingresar Números!</span>
-								</div>
-								<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-									<label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
-										<i class="material-icons">search</i>
-									</label>
-									<div class="mdl-textfield__expandable-holder">
-										<input class="mdl-textfield__input" type="text" id="sample6">
-										<label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
-									</div>
-								</div>
-								<br>
-								<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Acceder</button>
-							</form>
-							<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="margin: 0 auto;text-align: left;">
-								<thead>
-									<tr>
-										<th><i class="material-icons">search</i></th>
-										<th class="mdl-data-table__cell--non-numeric">Nombre de Alumno</th>
-										<th>Ciclo</th>
-										<th>Código</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-												<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-											</label>
-										</td>
-										<td class="mdl-data-table__cell--non-numeric">Luis Uculmana Lara</td>
-										<td>II</td>
-										<td>20143406</td>
-									</tr>
-									<tr>
-										<td>
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-												<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
-											</label>
-										</td>
-										<td class="mdl-data-table__cell--non-numeric">Luis Uculmana Lara</td>
-										<td>II</td>
-										<td>20143406</td>
-									</tr>
-									<tr>
-										<td>
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
-												<input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
-											</label>
-										</td>
-										<td class="mdl-data-table__cell--non-numeric">{{ message }}</td>
-										<td>II</td>
-										<td>20143406</td>
-									</tr>
-								</tbody>
-							</table>
+							<!-- Here the partials -->
+							<div class="main-view-container" ui-view></div>
+							<!-- End of partials -->
 						</div>
 						<div class="mdl-card__menu" style="color:white;">
 							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
