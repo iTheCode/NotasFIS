@@ -6,7 +6,7 @@
 		$scope.login = function(){
 			// Some login code with services
 			console.log('Correct ng-submit');
-			$state.go('upload');
+			$state.go('options');
 		}
 	}]);
 })();

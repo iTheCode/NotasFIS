@@ -5,15 +5,16 @@
 	<meta name="description" content="Esta web está siendo sieñada para el uso de las Notas de la Facultad de Ingenierí de Sistemas - UNICA">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Notas FIS</title>
-	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
-	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<script type="text/javascript" src="app/libraries/angular.min.js"></script>
 	<script type="text/javascript" src="app/libraries/angular-ui-router.min.js"></script>
 	<script type="text/javascript" src="app/app.js"></script>
 	<script type="text/javascript" src="app/controllers/home.controller.js"></script>
 	<script type="text/javascript" src="app/controllers/login.controller.js"></script>
 	<script type="text/javascript" src="app/controllers/upload.controller.js"></script>
+	<script type="text/javascript" src="app/controllers/options.controller.js"></script>
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <style>
 	.demo-card-wide.mdl-card {
